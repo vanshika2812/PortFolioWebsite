@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Brygada+1918:ital@1&family=Kalam:wght@700&family=Open+Sans:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    
+        <div id="container">
+             <nav >
+                  <h3>Vanshika Batra</h3>
+                  <div class="links" id="myTopnav">
+                    <a href="#container">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+
+                  </div>
+                </nav>
+                <div id="sections">
+                    <div id="left">
+                        <div id="line"></div>
+                        <h4>Hello👋 I'm</h4>
+                        <h1>Vanshika Batra</h1>
+                         <p>A computer science student passionate about 
+                            programming and design</p>
+                            <a href="#about"> <button id="Moreaboutme">About Me</button></a>
+                    </div>
+                </div>
+            </div>
+            <div id="about">
+                <h2 id="About-me-heading"><ion-icon name="person"></ion-icon>About Me</h2>
+                 <img src="images/Img.jpg" width="280" height ="280"alt="Myphoto">
+                 <br>
+                 <br>
+                 <p id="para">Hello! My name is Vanshika Batra.<br>
+                     An organised, hard-working ,creative and a junior<br>
+                      Computer Science student at SJCE. I have a diverse set<br> 
+                      of skills, ranging from design, to HTML+CSS+JavaScript.</p>
+              </div>
+              
+             <div id="education">
+            <h2 id="Edu-heading"><ion-icon name="school"></ion-icon > My Education</h2>
+                <div class="college">
+                    <img src="./images/sjce.jpg" alt="Collegeimage">
+                    <div id="college-description">
+                    <h3>Bachelors of Engineering in Computer Science and Business systems</h3>
+                    <p>Sri Jayachamrajendra College of Engineering || SJCE</p>
+                    <p>2020-2024 | CGPA-9.5/10(Till 5th Semester)</p>
+                    </div>
+                </div>
+                <div class="intermediate">
+                    <img src="./images/bv2.jpg" alt=""  width="280px" height="220px">
+                    <div id="school-description">
+                        <h3>Intermediate | Non-Medical Science</h3>
+                        <p>Banasthali Vidyapith</p>
+                        <p>2017-2019 | Percentage-94.88%</p>
+                    </div>
+                </div>
+           
+           <div class="highschool">
+            <img src="./images/ams.png" alt=""  width="280px" height="220px">
+            <div id="description">
+                <h3>High School</h3>
+                <p>Asha Modern School</p>
+                <p>2017 | CGPA-10/10</p>
+            </div>
+        </div>
+   </div>
+           
+           
+           <div id="skills">
+            <h2 id="Skills-heading"><ion-icon name="desktop-outline"></ion-icon> Skills & Abilities</h2>
+            <div class="row">
+                  <div class="column">
+                    <img src="./images/skills.jpg" alt="" class="skill-img">
+                 </div>
+                <div class="column" id="skill-explain">
+                    
+                        <h2 >WebSkills</h2>
+                        <div class="web">
+                    <p > HTML</p>
+                    <p >CSS</p>
+                    <p>JavaScript - jQuery, ReactJS</p></div>
+                    
+                    <h2>Languages</h2>
+                    <div class="lang">
+                    <p>C</p>
+                    <p>C++</p>
+                    <p>Python(Basic)</p>
+                    </div>
+                    <h2>Tools & Technologies</h2>
+                    <div class="tool">
+                        <p>Git & github</p>
+                        <p>MySQL</p>
+                    </div>
+                    
+                </div>
+               
+            </div>
+           </div>
+                
+                
+                <h2 id="contact"><ion-icon name="people"></ion-icon>Get in touch</h2>
+                <div class="touch">
+                    <div class="row">
+                        <div class="column">
+                          <img src="./images/temp1.jpg" class="contactimg">
+                        </div>
+                        <div class="column">
+                            <form onsubmit="sendemail();reset();return false">
+                                <input type="text" id="name" class="name"placeholder="Name" >
+                                <br>
+                                <br>
+                                <input type="tel" placeholder="Phone Number">
+                                <br>
+                                <br>
+                                <!--<button type="submit">Submit</button>-->
+                                <input type="email" id="email" placeholder='Email'>
+                                <br>
+                                <br>
+                                <textarea name="" id="message" cols="30" rows="10" placeholder="Type Message"></textarea>
+                                <br>
+                                <br>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                
+                <footer>
+                    <h3>Thankyou for visiting my portfolio website.<br>Connect with me over socials.</h3><br>
+                    <div id="contactinfo">
+                        <p><ion-icon name="call"></ion-icon> +91 9368363272</p>
+                        <br>
+                       <p><ion-icon name="mail"></ion-icon> vanshikabatra281@gmail.com</p>
+                       <br>
+                        <p><ion-icon name="location-outline"></ion-icon>Saharanpur,India-247001</p>
+                    <br>
+        <div class="socialicon">
+            <a href="https://github.com/vanshika2812" class="nav-social-icon"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/vanshika-batra-16300a211/" class="nav-social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="mailto:vanshikabatra281@gmail.com" class="nav-social-icon"><ion-icon name="mail"></ion-icon></a>
+        </div>   
+         
+                    </div>
+                </footer>
+                <script>
+                    $(document).ready(function(){
+                      $(window).scroll(function() { 
+                        if ($(document).scrollTop() > 50) { 
+                          $(".navbar-fixed-top").css("background-color", "black");
+                        } else {
+                          $(".navbar-fixed-top").css("background-color", "transparent");
+                        }
+                      });
+                    });
+                </script>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+</body>
+</html>

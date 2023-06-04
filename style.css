@@ -1,0 +1,499 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width:100%;
+    overflow-x: hidden;
+}
+#container{
+    width:100%;
+    height:100vh;
+
+}
+
+nav{
+    width:87%;
+    height:70px;
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     margin:0 auto;
+     padding-left: 10px;
+     font-family: 'Work Sans', sans-serif;
+     position: fixed;
+     top: 0;
+     width: 98%;
+     
+     
+}
+
+  
+nav h3:hover {
+color:white;
+cursor: pointer;
+}
+nav .links{
+    display:flex;
+    align-items: center;
+    
+}
+
+nav .links a{
+    margin-left:55px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    color:black;
+    letter-spacing: 3px;
+    font-weight: 700;
+
+}
+nav .links a:hover {
+  
+  color:white;
+
+}
+nav .links .icon{
+    width:60px;
+    padding:20px;
+    font-size:x-large;
+    display:none;
+    
+}
+#container{
+    background: url('./images/background.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#sections{
+    width:100%;
+    height:87.5vh;
+   
+    
+}
+#left{
+    width:50%;
+    height:100%;
+    padding:100px;
+    
+}
+#left #line{
+    width:50px;
+    height:3px;
+    background-color: black;
+    
+}
+#left h4{
+    font-family:'Work Sans', sans-serif ;
+    font-size:20px;
+    margin-top: 15px;
+    color:white;
+}
+#left h1{
+    font-family: 'Work Sans', sans-serif ;
+    font-size: 60px;
+    margin-top: 15px;
+    color:rgb(17, 17, 69);
+    
+}
+#left p{
+    font-family:'Work Sans','sans-serif ';
+    font-size: 17px;
+    margin-top: 15px;
+    color:white
+
+}
+#left button{
+    margin:20px;
+    height:35px;
+    width:150px;
+    background-color:rgb(17, 17, 69);
+    color:white;
+    border-radius: 15px;
+   font-weight: 700;
+    letter-spacing: 2px;
+    border:none;
+}
+
+
+#Moreaboutme:hover {
+    color:black;
+    background-color:white ;
+    font-weight: 700;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    .links a {display: none;}
+    .links a.icon {
+      float: right;
+      display: block;
+    }
+}
+@media screen and (max-width: 768px){
+.links.responsive {
+    position: relative;
+    top:100%;
+    right:1%;
+    width:100vw;
+    height:38vh;
+    display:block;
+    border-radius: 10px;
+    
+    }
+.links.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.links.responsive a {
+  float: none;
+  display: block;
+  margin:0;
+  padding:15px;
+  border: 0px black solid;
+  border-radius: 2px;
+   text-align:center;
+   background-color:rgb(230, 230, 237);
+  transition:all .25s ease;
+
+
+}
+
+.links.responsive a:hover{
+    color:gray;
+}
+}
+
+#about{
+    
+        display:block;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        font-size:1.5rem;
+        text-align: center;
+        background-color:  rgb(231, 234, 244);
+        width:100vw;
+        height:95vh;
+        word-spacing: 2.5px;
+        color: rgb(38, 18, 76);
+        
+     
+}
+#About-me-heading{
+    font-size: xx-large;
+    padding:10px;
+    color:black;
+}
+#about img{
+    border-radius: 50%;
+}
+#Edu-heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size:xx-large;
+    text-align: center;
+    padding:10px;
+   
+}
+#education{
+    background-color: rgb(245, 244, 250);
+    padding:0;
+    margin:0;
+}
+.college{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    padding-left:10px;
+    padding-right:10px;
+    margin: 150px;
+    margin-top: 0%;
+    margin-bottom: 5px;
+    border-radius: 9px;
+}
+.college>img{
+    padding-right: 50px;
+    padding-left: 100px;
+    
+}
+.college #college-description{
+    padding:50px;
+    margin:30px;
+    padding-left:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+.college #college-description>p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:lighter;
+    
+}
+.intermediate{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    padding-left:10px;
+    padding-right:10px;
+    margin: 150px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-radius: 9px;
+
+}
+.intermediate>img{
+    padding:40px;
+    padding-left: 100px;
+    padding-right: 0;
+
+    
+}
+.intermediate #school-description{
+    padding:50px;
+    margin:30px;
+    padding-left:126px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+.intermediate #school-description>p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:lighter;
+}
+.highschool{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    padding-left:10px;
+    padding-right:10px;
+    margin: 150px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-radius: 9px;
+
+}
+.highschool>img{
+    padding:45px;
+    padding-left: 100px;
+    padding-right: 0;
+}
+.highschool #description{
+    padding:50px;
+    margin:30px;
+    padding-left:126px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+.highschool #description>p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:lighter;
+}
+#skills{
+    background-color: rgb(237, 254, 253);
+}
+#Skills-heading{
+    font-weight: 1.5rem;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.row .skill-img{
+    height:500px;
+    margin:20px;
+    padding:40px;
+    border-radius: 10px;
+
+}
+
+
+
+.column{
+    float: left;
+    width: 50%;
+  }
+  .column .contactimg{
+    
+    width:35vw;
+    height:65vh;
+    border-radius: 5%;;
+
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #skill-explain{
+font-family:  'Work Sans', sans-serif;
+text-align: center;
+align-items: center;
+padding-top: 50px;
+padding-left: 0;
+  }
+  #skill-explain h2{
+    font-weight:800;
+    text-align: center;
+    font-size: 2rem;
+  }
+ .web {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding:20px;
+  }
+  .lang{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding:20px;
+  }
+  .tool{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding:20px;
+  }
+  
+  
+ 
+  input[type=text]{
+     width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: medium;
+  
+  }
+  input[type=tel]{
+    width: 100%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ box-sizing: border-box;
+ font-size: medium;
+ 
+ }
+ input[type=email]{
+    width: 100%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ box-sizing: border-box;
+ font-size: medium;
+ }
+ textarea{
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: large;
+ }
+ input[type=submit]{
+    width:25%;
+    padding: 12px 12px;
+    margin:7px 0;
+    background-color: rgb(73, 73, 154);
+    color: azure;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    border-color: transparent;
+
+ }
+#contact{
+    text-align: center;
+    display:block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    
+}
+.touch{
+    background-color:rgba(240, 240, 240, 0.751);
+    padding:40px;
+    margin:80px;
+    margin-top: 0%;
+    border-radius:20px;
+}
+footer{
+    background-color: rgb(3, 3, 35);
+    color:white;
+    padding: 50px;
+    font-family: 'Work Sans', sans-serif ;
+    letter-spacing: 2px;
+display:flex;
+justify-content: space-between;
+}
+#socialicon{
+    color:white;
+
+}
+.nav-social-icon{
+    font-size: 2rem;
+    color:white;
+}
+
+
+@media screen and (max-width: 768px) {
+   
+   
+    #left>p{
+        display: none;
+    }
+
+    #about{
+        margin-bottom:50px;
+        padding-bottom:60px;
+    }
+    .college{
+        display:block;
+    }
+    .college>img{
+        display:none;
+    }
+    .college #college-description{
+        margin:0;
+        padding:0;
+    }
+    .intermediate{
+        display: block;
+    }
+  
+    .intermediate>img{
+        display:none;
+        margin:0;
+    }
+    .intermediate #school-description{
+        margin:0;
+        padding:0;
+    }
+    .highschool{
+        display:block;
+    }
+    .highschool >img{
+        display:none;
+    }
+    .highschool #description{
+        margin:0;
+        padding:0;
+    }
+   #skill-explain{
+    display: block;
+    position: relative;
+    align-items: center;
+    left: 20%;
+
+   }
+    
+    .column{
+       float:none; 
+    }
+      footer{
+        display:block;
+      }
+    
+
+
+}
+
